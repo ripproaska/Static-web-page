@@ -1,0 +1,174 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: white;
+    z-index: 10;
+    transition: all 0.3s ease;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: auto;
+    padding: 1rem 2rem;
+}
+
+.logo {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #0073e6;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #0073e6;
+}
+
+nav.scrolled {
+    background: #0073e6;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+nav.scrolled .nav-links a,
+nav.scrolled .logo {
+    color: white;
+}
+
+/* Hero Section */
+#hero {
+    height: 100vh;
+    background: linear-gradient(to bottom right, #0073e6, #00b3b3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 0 1rem;
+}
+
+.hero-content h2 {
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+    animation: fadeIn 1.5s ease-in;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.8rem 1.5rem;
+    background: white;
+    color: #0073e6;
+    border-radius: 5px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: #e6f0ff;
+    transform: scale(1.05);
+}
+
+/* Sections */
+section {
+    max-width: 900px;
+    margin: 5rem auto;
+    padding: 2rem;
+}
+
+h2 {
+    color: #0073e6;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    border-left: 4px solid #0073e6;
+    padding-left: 0.5rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+/* Timeline Cards */
+.timeline {
+    display: grid;
+    gap: 1rem;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Contact */
+.contact-info {
+    list-style: none;
+}
+
+.contact-info a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1.5rem 0;
+    background: #0073e6;
+    color: white;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}

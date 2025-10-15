@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashish | Cloud Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 class="logo">Ashish</h1>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#journey">AWS Journey</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h2>Hi, I'm Ashish</h2>
+            <p>Aspiring Cloud Professional | AWS re/Start Graduate</p>
+            <a href="#journey" class="btn">Explore My Journey</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'm Ashish, a chef turned tech enthusiast exploring the world of cloud computing. 
+           After years of running restaurants and working in hospitality, I joined the AWS re/Start program 
+           to build the skills needed for a cloud career. I’m focused on learning AWS fundamentals and applying 
+           them to real-world scenarios through hands-on labs and projects.</p>
+    </section>
+
+    <section id="journey">
+        <h2>My AWS re/Start Journey</h2>
+        <div class="timeline">
+            <div class="card">
+                <h3>Cloud Foundations</h3>
+                <p>Learned core AWS concepts like cloud benefits, global infrastructure, and pricing models.</p>
+            </div>
+            <div class="card">
+                <h3>Compute & Storage</h3>
+                <p>Worked with EC2, S3, and learned how to deploy and manage applications on AWS.</p>
+            </div>
+            <div class="card">
+                <h3>Networking & Databases</h3>
+                <p>Gained experience with VPCs, RDS, and DynamoDB, understanding secure communication and data storage.</p>
+            </div>
+            <div class="card">
+                <h3>Career Readiness</h3>
+                <p>Developed technical communication skills, practiced interview scenarios, and built confidence for cloud roles.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <p>Coming soon! I’ll be showcasing my AWS hands-on labs and cloud automation projects here.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Let’s connect and talk about cloud, tech, or collaboration opportunities.</p>
+        <ul class="contact-info">
+            <li>Email: <a href="mailto:ashish@example.com">ashish@example.com</a></li>
+            <li>LinkedIn: <a href="#">linkedin.com/in/ashish</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>© 2025 Ashish | Built with passion and curiosity</p>
+    </footer>
+
+    <script>
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Navbar scroll effect
+        const nav = document.querySelector('nav');
+        window.addEventListener('scroll', () =>
