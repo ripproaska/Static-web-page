@@ -88,4 +88,9 @@
 
         // Navbar scroll effect
         const nav = document.querySelector('nav');
-        window.addEventListener('scroll', () =>
+        window.addEventListener('scroll', () => {
+            nav.classList.toggle('scrolled', window.scrollY > 50);
+        });
+    </script>
+</body>
+</html>
